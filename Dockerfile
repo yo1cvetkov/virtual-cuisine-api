@@ -1,6 +1,6 @@
-FROM gradle:jdk23 AS build
-COPY . . 
-RUN ./gradlew clean build -x test
+# FROM gradle:jdk23 AS build
+# COPY . . 
+# RUN ./gradlew clean build -x test
 
 FROM openjdk:23-slim
 WORKDIR /
